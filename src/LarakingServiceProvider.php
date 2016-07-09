@@ -23,6 +23,6 @@ class LarakingServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+        $this->commands('Larafast\Laraking\Console\Commands\LaraKingMainCrudGenerator');
     }
 }
