@@ -1,0 +1,13 @@
+{
+    "name": "larafast/laraking",
+    "description": "This is Laravel Admin with advanced automatic CRUD generator.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mridul Biswas",
+            "email": "mridul.webengineer@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
