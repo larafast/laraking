@@ -11,7 +11,8 @@ class LaraKingMainCrudGenerator extends Command
      *
      * @var string
      */
-    protected $signature = 'larakingcrud:all {modulename}';
+    protected $signature = 'larakingcrud:all {modulename : The Name of the Module}
+                        {--tablename=default : Database Table Name for given Module}';
 
     /**
      * The console command description.
@@ -37,6 +38,22 @@ class LaraKingMainCrudGenerator extends Command
      */
     public function handle()
     {
-        //
+        $this->info('I am Laravel King');
+        //$this->error('Something went wrong!');
+        //$this->line('Display this on the screen');
+
+        $moduleName = $this->argument('modulename');
+
+        $this->info('Creating Module: '. $moduleName );
+
+        // Retrieve a specific option...
+        $tableName = $this->option('tablename');
+
+        $this->info('Creating Table Migration : '. $tableName );
+
+        //$this->comment('Authentication scaffolding generated successfully!');
+
+        //$this->line('<info>Created View:</info> '. $moduleName);
+
     }
 }
