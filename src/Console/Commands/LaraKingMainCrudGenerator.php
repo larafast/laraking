@@ -38,18 +38,18 @@ class LaraKingMainCrudGenerator extends Command
      */
     public function handle()
     {
-        $this->info('I am Laravel King');
+        $this->info('Hi,I am Laravel King');
         //$this->error('Something went wrong!');
         //$this->line('Display this on the screen');
 
         $moduleName = $this->argument('modulename');
 
-        $this->info('Creating Module: '. $moduleName );
+        $this->line('<info>Creating Module :</info> '. $moduleName );
 
         // Retrieve a specific option...
         $tableName = $this->option('tablename');
 
-        $this->info('Creating Table Migration : '. $tableName );
+        $this->line('<info>Creating Table Migration :</info> '. $tableName );
 
         //$this->comment('Authentication scaffolding generated successfully!');
 
