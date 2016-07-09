@@ -11,14 +11,14 @@ class LaraKingMainCrudGenerator extends Command
      *
      * @var string
      */
-    protected $signature = 'larakingcrud:all';
+    protected $signature = 'larakingcrud:all {modulename}';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Command description';
+    protected $description = 'Create All Codes including Model, Migration, Controller and View for given Module Name';
 
     /**
      * Create a new command instance.
