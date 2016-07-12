@@ -8,6 +8,6 @@
             "email": "mridul.webengineer@gmail.com"
         }
     ],
-    "minimum-stability": "dev-stable",
+    "minimum-stability": "dev",
     "require": {}
 }
